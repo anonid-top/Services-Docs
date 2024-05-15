@@ -121,7 +121,7 @@ sudo systemctl enable junctiond
 ```bash
 junctiond tendermint unsafe-reset-all --home ~/.junction/ --keep-addr-book
 
-wget -o- https://node39.top/testnet/airchains/snapshort-airchains.tar.lz4 | tar -Ilz4 -xf snapshort-airchains.tar.lz4 -C $HOME/.junction
+wget -o- .com/TimeleapLabs/unchained/blob/develop/quickstart.md | tar -Ilz4 -xf snapshort-airchains.tar.lz4 -C $HOME/.junction
 ```
 {% endcode %}
 
@@ -329,7 +329,7 @@ sudo service junctiond stop
 mv $HOME/.junction/data/priv_validator_state.json $HOME/.junction/priv_validator_state.json.backup
 rm -rf $HOME/.junction/data $HOME/.junction/wasmPath
 
-wget -o- https://node39.top/testnet/airchains/snapshort-airchains.tar.lz4 | tar -Ilz4 -xf snapshort-airchains.tar.lz4 -C $HOME/.junction
+wget -o- .com/TimeleapLabs/unchained/blob/develop/quickstart.md | tar -Ilz4 -xf snapshort-airchains.tar.lz4 -C $HOME/.junction
 
 mv $HOME/.junction/priv_validator_state.json.backup $HOME/.junction/data/priv_validator_state.json
 
