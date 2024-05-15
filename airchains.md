@@ -121,7 +121,7 @@ sudo systemctl enable junctiond
 ```bash
 junctiond tendermint unsafe-reset-all --home ~/.junction/ --keep-addr-book
 
-wget -O- https://snap.anonid.top/snaps%2Fairchains.snap.tar.lz4 | tar -Ilz4 -x - -C ./data
+wget -O- https://snap.anonid.top/snaps%2Fairchains.snap.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.junction
 ```
 {% endcode %}
 
@@ -329,7 +329,7 @@ sudo service junctiond stop
 mv $HOME/.junction/data/priv_validator_state.json $HOME/.junction/priv_validator_state.json.backup
 rm -rf $HOME/.junction/data $HOME/.junction/wasmPath
 
-wget -O- https://snap.anonid.top/snaps%2Fairchains.snap.tar.lz4 | tar -Ilz4 -x - -C ./data
+wget -O- https://snap.anonid.top/snaps%2Fairchains.snap.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.junction
 
 mv $HOME/.junction/priv_validator_state.json.backup $HOME/.junction/data/priv_validator_state.json
 
