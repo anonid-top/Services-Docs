@@ -115,7 +115,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable junctiond
 ```
 
-### 4.6. Download Snapshort (Updated every 6 hours)
+### 4.6. Download Snapshort (Updated every day)
 
 {% code overflow="wrap" %}
 ```bash
