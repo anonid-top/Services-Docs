@@ -18,9 +18,9 @@ Discord: [https://discord.gg/airchains](https://discord.gg/airchains)
 
 ## 2. Service
 
-* **Explorer**: [https://explorer.nodesync.top/Junction-Testnet](https://explorer.anonid.top/Airchains)
-* **API**: [https://junction-testnet-api.nodesync.top](https://airchains-api.anonid.top/)
-* **RPC**: [https://junction-testnet-rpc.nodesync.top](https://airchains-rpc.anonid.top/)
+* **Explorer**: [https://explorer.anonid.top/Airchains](https://explorer.anonid.top/Airchains)
+* **API**: [https://airchains-api.anonid.top](https://airchains-api.anonid.top)
+* **RPC**: [https://airchains-rpc.anonid.top](https://airchains-rpc.anonid.top)
 
 ***
 
