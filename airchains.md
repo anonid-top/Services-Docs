@@ -28,19 +28,14 @@ Discord: [https://discord.gg/airchains](https://discord.gg/airchains)
 
 ### **3.1. Recommended Hardware**
 
-{% code overflow="wrap" fullWidth="false" %}
 ```
 CPU: 4 Cores, RAM: 8GB, Storage: 40GB NVMe SSD
 ```
-{% endcode %}
 
 ### 3.2. Minumum Hardware
-
-{% code overflow="wrap" %}
 ```
 CPU: 2 Cores, RAM: 4GB, Storage: 40GB SSD
 ```
-{% endcode %}
 
 ### 3.3. OS:
 
@@ -117,13 +112,11 @@ sudo systemctl enable junctiond
 
 ### 4.6. Download Snapshort (Updated every day)
 
-{% code overflow="wrap" %}
 ```bash
 junctiond tendermint unsafe-reset-all --home ~/.junction/ --keep-addr-book
 
 wget -O- https://snap.anonid.top/snaps%2Fairchains.snap.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.junction
 ```
-{% endcode %}
 
 ## 5. Create or import wallet
 
@@ -211,11 +204,9 @@ Change your info, include **pubkey, moniker, indentity, website, security, detai
 
 ### **7.3. Submit the transaction to create the validator:**
 
-{% code overflow="wrap" %}
 ```bash
 junctiond tx staking create-validator validator.json --from wallet --chain-id junction --fees 5000amf -y
 ```
-{% endcode %}
 
 When command complete, you should copy **TXHash** and check transactions at [https://explorer.anonid.top/Airchains/tx](https://explorer.anonid.top/Airchains/tx) (copy hash to find or paste it after click to search icon adn enter) to verify this transactions  is <mark style="color:green;">success</mark> or <mark style="color:red;">failed</mark> and then check your validator name in staking page of explorer at [https://explorer.anonid.top/Airchains/staking](https://explorer.anonid.top/Airchains/staking). Remember check in **Inactive** tab, because at now, only 100 top validator can be show in **Active** tab.
 
@@ -227,30 +218,24 @@ Make verify and then go to this channel and paste your wallet address at [#id-5.
 
 ### 7.5. Delegate token to your own validator
 
-{% code overflow="wrap" %}
 ```bash
 junctiond tx staking delegate $(junctiond keys show wallet --bech val -a)  1000000amf 
 --from wallet --chain-id junction --fees 5000amf -y
 ```
-{% endcode %}
 
 With "**wallet**" is your wallet name create or recovery at [#id-5.1.-add-new-wallet-key](airchains.md#id-5.1.-add-new-wallet-key "mention")or [#id-5.2.-or-recover-existing-key](airchains.md#id-5.2.-or-recover-existing-key "mention").
 
 ## 8. Withdraw rewards and commission from your validator
 
-{% code overflow="wrap" %}
 ```bash
 junctiond tx distribution withdraw-rewards $(junctiond keys show wallet --bech val -a) --from wallet --chain-id junction --fees 5000amf -y
 ```
-{% endcode %}
 
 ## 9. Unjail validator
 
-{% code overflow="wrap" %}
 ```bash
 junctiond tx slashing unjail --from wallet --chain-id junction --fees 5000amf -y
 ```
-{% endcode %}
 
 ## 10. Services Management
 
